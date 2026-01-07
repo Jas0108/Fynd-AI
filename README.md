@@ -4,20 +4,20 @@ A minimal, production-ready web application with two dashboards: a public-facing
 
 ## Features
 
-### User Dashboard (Public-Facing)
+### User Dashboard 
 - Star rating selection (1-5)
 - Optional review text input (up to 5000 characters)
 - AI-generated personalized response
 - Success/error state handling
 - Automatic submission storage
 
-### Admin Dashboard (Internal-Facing)
-- 📊 Real-time statistics (total reviews, average rating, rating breakdown)
-- 🔄 Auto-refresh capability (every 5 seconds)
-- 📋 Live-updating list of all submissions
-- 🔍 Filter by rating
-- 🤖 AI-generated summaries and recommended actions for each review
-- 📈 Visual analytics with progress bars
+### Admin Dashboard 
+- Real-time statistics (total reviews, average rating, rating breakdown)
+- Auto-refresh capability (every 5 seconds)
+- Live-updating list of all submissions
+- Filter by rating
+- AI-generated summaries and recommended actions for each review
+  
 
 ## Technical Stack
 
@@ -25,13 +25,8 @@ A minimal, production-ready web application with two dashboards: a public-facing
 - **Database**: SQLite (via SQLAlchemy)
 - **Frontend**: Plain HTML + JavaScript (no frameworks)
 - **AI Integration**: OpenRouter (server-side only)
-- **Deployment**: Render (recommended) or Vercel
-
-## Prerequisites
-
-- Python 3.9+ installed
-- OpenRouter API key ([get one here](https://openrouter.ai/))
-
+- **Deployment**: Render
+- 
 ## Local Development Setup
 
 1. **Clone the repository**
@@ -79,7 +74,7 @@ A minimal, production-ready web application with two dashboards: a public-facing
    - User Dashboard: http://localhost:8000
    - Admin Dashboard: http://localhost:8000/admin
 
-## Deployment to Render (Recommended)
+## Deployment to Render 
 
 ### Steps
 
