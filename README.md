@@ -53,26 +53,7 @@ A minimal, production-ready web application with two dashboards: a public-facing
 
 4. **Set up environment variables**
    Create a `.env` file in the root directory:
-   ```env
-   OPENROUTER_API_KEY=your_openrouter_api_key_here
    ```
-   
-   Or set it directly:
-   ```bash
-   # Windows PowerShell:
-   $env:OPENROUTER_API_KEY="your_key_here"
-   # macOS/Linux:
-   export OPENROUTER_API_KEY="your_key_here"
-   ```
-
-5. **Run the development server**
-   ```bash
-   uvicorn backend.main:app --reload
-   ```
-
-6. **Open your browser**
-   - User Dashboard: http://localhost:8000
-   - Admin Dashboard: http://localhost:8000/admin
 
 ## Deployment to Render 
 
