@@ -1,0 +1,23 @@
+===========================================
+WHERE TO PUT YOUR OPENROUTER API KEY
+===========================================
+
+STEP 1: Create a file named ".env" in this folder (Fynd)
+
+STEP 2: Open the .env file and add this line:
+
+OPENROUTER_API_KEY=sk-or-v1-your-actual-key-here
+
+STEP 3: Replace "sk-or-v1-your-actual-key-here" with your real API key
+
+EXAMPLE:
+OPENROUTER_API_KEY=sk-or-v1-abc123xyz789def456ghi012jkl345mno678pqr901stu234vwx567
+
+STEP 4: Save the file
+
+That's it! The server will automatically read this file when you start it.
+
+===========================================
+GET YOUR API KEY:
+https://openrouter.ai/keys
+===========================================

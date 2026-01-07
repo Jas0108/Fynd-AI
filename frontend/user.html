@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AI Feedback - User Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1>Share Your Experience</h1>
+        <p>Your feedback helps us improve.</p>
+        <nav class="nav">
+          <a href="/" class="nav-link active">Submit Feedback</a>
+          <a href="/admin" class="nav-link">Admin Dashboard</a>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="card">
+          <h2>Rate your experience</h2>
+
+          <form id="review-form">
+            <div class="field">
+              <label>Rating (1–5)</label>
+              <div class="rating-stars" id="rating-stars">
+                <button type="button" data-value="1" class="star">★</button>
+                <button type="button" data-value="2" class="star">★</button>
+                <button type="button" data-value="3" class="star">★</button>
+                <button type="button" data-value="4" class="star">★</button>
+                <button type="button" data-value="5" class="star">★</button>
+              </div>
+              <input type="hidden" id="rating" name="rating" />
+            </div>
+
+            <div class="field">
+              <label for="review">Review (optional)</label>
+              <textarea
+                id="review"
+                name="review"
+                maxlength="5000"
+                placeholder="Tell us about your experience..."
+              ></textarea>
+              <div class="char-count">
+                <span id="char-count">0</span> / 5000
+              </div>
+            </div>
+
+            <div id="message" class="message hidden"></div>
+
+            <button type="submit" id="submit-btn" class="btn primary">
+              Submit Review
+            </button>
+          </form>
+        </section>
+
+        <section id="ai-response-section" class="card hidden">
+          <h2>Our Response</h2>
+          <p id="ai-response-text"></p>
+        </section>
+      </main>
+    </div>
+
+    <script src="/static/user.js"></script>
+  </body>
+</html>
+

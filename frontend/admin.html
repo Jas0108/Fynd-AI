@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AI Feedback - Admin Dashboard</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <h1>Admin Dashboard</h1>
+        <p>Monitor feedback, insights, and recommended actions.</p>
+        <nav class="nav">
+          <a href="/" class="nav-link">Submit Feedback</a>
+          <a href="/admin" class="nav-link active">Admin Dashboard</a>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="card" id="stats-section">
+          <h2>Statistics</h2>
+          <div id="stats-loading" class="info">Loading stats...</div>
+          <div id="stats-content" class="hidden">
+            <div class="stats-grid">
+              <div class="stat-card">
+                <div class="stat-value" id="total-reviews">0</div>
+                <div class="stat-label">Total Reviews</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value" id="average-rating">0.0</div>
+                <div class="stat-label">Average Rating</div>
+              </div>
+            </div>
+
+            <h3>Rating Breakdown</h3>
+            <div id="rating-breakdown" class="rating-breakdown"></div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Submissions</h2>
+
+          <div class="filters">
+            <button class="filter-btn active" data-rating="all">
+              All
+            </button>
+            <button class="filter-btn" data-rating="5">5 stars</button>
+            <button class="filter-btn" data-rating="4">4 stars</button>
+            <button class="filter-btn" data-rating="3">3 stars</button>
+            <button class="filter-btn" data-rating="2">2 stars</button>
+            <button class="filter-btn" data-rating="1">1 star</button>
+          </div>
+
+          <div id="admin-message" class="message hidden"></div>
+          <div id="reviews-loading" class="info">Loading reviews...</div>
+
+          <div id="reviews-list" class="reviews-list hidden"></div>
+        </section>
+      </main>
+    </div>
+
+    <script src="/static/admin.js"></script>
+  </body>
+</html>
+
