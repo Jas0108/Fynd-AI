@@ -5,11 +5,11 @@ A minimal, production-ready web application with two dashboards: a public-facing
 ## Features
 
 ### User Dashboard (Public-Facing)
-- ⭐ Star rating selection (1-5)
-- 📝 Optional review text input (up to 5000 characters)
-- 🤖 AI-generated personalized response
-- ✅ Success/error state handling
-- 💾 Automatic submission storage
+- Star rating selection (1-5)
+- Optional review text input (up to 5000 characters)
+- AI-generated personalized response
+- Success/error state handling
+- Automatic submission storage
 
 ### Admin Dashboard (Internal-Facing)
 - 📊 Real-time statistics (total reviews, average rating, rating breakdown)
